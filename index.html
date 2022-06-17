@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Practice Survey Form</title>
+
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to fill in this form</p>
+    <div id="container">
+        <form id="survey-form">
+            <label id="name-label">Name <input id="name" type="text" placeholder="Enter your name "
+                    required></input></label>
+            <label id="email-label">Email <input id="email" type="email" placeholder="Enter your email "
+                    required></input></label>
+            <label id="number-label">Age <input id="number" type="number" min="13" max="120"
+                    placeholder="Enter you age (should be between 13 to 120)" required /></label>
+            <label id="dropdown-label">How is the form?
+                <select id="dropdown">
+                    <option class="options" value="1">Good</option>
+                    <option class="options" value="2">Very Good</option>
+                    <option class="options" value="3">Excellent</option>
+                </select>
+            </label>
+
+            <label id="radio-label">Would you like me to build a website for you?
+                <label class="radio-input"><input type="radio" class="radio-btns" name="radio-option"
+                        value="yes" />Yes</label>
+                <label class="radio-input"><input type="radio" class="radio-btns" name="radio-option"
+                        value="no" />No</label>
+                <label class="radio-input"><input type="radio" class="radio-btns" name="radio-option"
+                        value="not sure" />Not Sure</label>
+            </label>
+
+            <label id="checkbox-label">
+                What should be the features of the website you want?
+                <label class="check-input"><input type="checkbox" value="responsive" />Responsive</label>
+                <label class="check-input"><input type="checkbox" value="javascript" />JavaScript</label>
+                <label class="check-input"><input type="checkbox" value="python" />Python</label>
+                <label class="check-input"><input type="checkbox" value="htm&css" />HTML & CSS</label>
+            </label>
+
+            <label id="textarea-label">Additional Comments:
+                <textarea placeholder="Write here...." rows="5" cols="30" id="textarea-id">
+
+      </textarea>
+            </label>
+            <input type="submit" value="Submit" id="submit" />
+
+        </form>
+    </div>
+
+</body>
+
+
+</html>
